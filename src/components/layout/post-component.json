@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_layout_post_components",
+  "info": {
+    "displayName": "PostComponent",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article"
+    }
+  }
+}

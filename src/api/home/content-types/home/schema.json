@@ -25,37 +25,30 @@
       "maxLength": 35,
       "minLength": 2
     },
-    "homeFeaturedArticle": {
+    "singlePost": {
       "type": "component",
       "repeatable": false,
-      "component": "layout.featured-post",
-      "required": true
+      "component": "layout.post-component"
     },
-    "homePopularCategory": {
+    "singlePostRepeatable": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.post-component"
+    },
+    "multiplePosts": {
       "type": "component",
       "repeatable": false,
-      "component": "layout.popular-post"
+      "component": "layout.posts-component"
     },
-    "homePopularCategoryRepeatable": {
+    "multiplePostsRepeatable": {
       "type": "component",
       "repeatable": true,
-      "component": "layout.popular-post",
-      "required": true
+      "component": "layout.posts-component"
     },
-    "homeCategories": {
+    "homeMainMenu": {
       "type": "component",
       "repeatable": true,
-      "component": "layout.categories",
-      "required": true
-    },
-    "featuredArea": {
-      "type": "dynamiczone",
-      "components": [
-        "layout.categories",
-        "layout.featured-post",
-        "layout.popular-post"
-      ],
-      "required": true
+      "component": "layout.menu"
     }
   }
 }

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_layout_posts_components",
+  "info": {
+    "displayName": "PostsComponent",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
+    }
+  }
+}
