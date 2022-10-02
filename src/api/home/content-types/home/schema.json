@@ -4,7 +4,8 @@
   "info": {
     "singularName": "home",
     "pluralName": "homes",
-    "displayName": "Home"
+    "displayName": "Home",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,6 +24,38 @@
       "required": true,
       "maxLength": 35,
       "minLength": 2
+    },
+    "homeFeaturedArticle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.featured-post",
+      "required": true
+    },
+    "homePopularCategory": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.popular-post"
+    },
+    "homePopularCategoryRepeatable": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.popular-post",
+      "required": true
+    },
+    "homeCategories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.categories",
+      "required": true
+    },
+    "featuredArea": {
+      "type": "dynamiczone",
+      "components": [
+        "layout.categories",
+        "layout.featured-post",
+        "layout.popular-post"
+      ],
+      "required": true
     }
   }
 }

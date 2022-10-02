@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_layout_popular_posts",
+  "info": {
+    "displayName": "PopularCategory",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    }
+  }
+}
